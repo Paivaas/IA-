@@ -1,9 +1,9 @@
 const button = document.getElementById('button')
 
-async function teste(){
+async function home(){
     window.location.href = './home/home.html'
 }
 
 window.onload = () => {
-    button.addEventListener('click', teste)
+    button.addEventListener('click', home)
 }
