@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: "Inria Sans", sans-serif;
 }
-
 body{
     height: 100vh;
     width: 100vw;
@@ -15,7 +14,6 @@ body{
 section{
     width: 40vw;
 }
-
 .decoration-page-left{
     display: flex;
     align-items: center;
@@ -65,14 +63,12 @@ section{
       opacity: .8;
     }
 }
-
 .content{
     height: 80vh;
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
 }
-
 .search{
     background-color: #F5F5F5;
     border-radius: 68px;
@@ -87,6 +83,9 @@ section{
 .search img{
     cursor: pointer;
 }
+.search img:hover{
+    transform: scale(.94);
+}
 input{
     width: 84%;
     height: 30px;
@@ -99,13 +98,11 @@ input:focus, select:focus {
     border: 0 none;
     outline: 0;
 } 
-
 .bot-IA{
     display: flex;
     filter: hue-rotate(97deg);
     gap: 8px;
 }
-
 .spam{
     background-color: #F0F0F0;
     border-radius: 0 24px 24px 24px;
@@ -115,4 +112,5 @@ input:focus, select:focus {
     padding: 12px;
     border-bottom: 4px solid rgb(185, 185, 185);
     height: 50px;
+    
 }
