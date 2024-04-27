@@ -52,6 +52,7 @@ nav div:nth-child(1){
 nav div:nth-child(2){
     border-bottom: 3px solid #AFAFAF;
     color: #AFAFAF;
+    cursor: not-allowed;
 }
 form{
     width: 100%;
@@ -87,7 +88,7 @@ footer{
     align-items: center;
     color: #FF79A8;
 }
-p, button{
+button{
     cursor: pointer;
 }
 input:focus, select:focus {
