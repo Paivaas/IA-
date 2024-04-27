@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+section{
+    width: 40vw;
+}
+
+.decoration-page-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -400px;
+    gap: 20px;
+}
+.decoration-page-left div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-top-right-radius: 90%;
+    border-bottom-right-radius: 90%;
+}
+.decoration-page-left :nth-child(1){
+    background-color: #FFE4EE;
+    width: 60vw;
+    height: 100vh;
+    
+    animation: pulse 6s infinite;
+    animation-direction: alternate, reverse;
+}
+.decoration-page-left :nth-child(2){
+    background-color: #FFC4D9;
+    width: 50vw;
+    height: 80vh;
+   
+    animation: pulse 6s infinite;
+    animation-direction: alternate, reverse;
+}
+.decoration-page-left :nth-child(3){
+    background-color: #FFAECA;
+    width: 40vw;
+    height: 60vh;
+    
+    animation: pulse 6s infinite;
+    animation-direction: alternate, reverse;
+
+}
+@keyframes pulse {
+    from{
+        transform: scale(.94);
+    }
+    to{
+      transform: scale(1.2);
+      opacity: .8;
+    }
+}
+
+.content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.search{
+    background-color: #F5F5F5;
+    border-radius: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-inline: 24px;
+    padding-block: 16px;
+    height: 60px;
+}
+.search img{
+    cursor: pointer;
+}
+input{
+    width: 84%;
+    height: 30px;
+    border: none;
+    background-color: #F0F0F0;
+    font-size: 18px;
+}
+input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.bot-IA{
+    display: flex;
+    filter: hue-rotate(97deg);
+    gap: 8px;
+}
+
+.spam{
+    background-color: #F0F0F0;
+    border-radius: 0 24px 24px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-bottom: 4px solid rgb(185, 185, 185);
+    height: 50px;
+}
